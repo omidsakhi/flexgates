@@ -1,0 +1,22 @@
+{
+  "name": "flexgate",
+  "version": "1.0.0",
+  "description": "Boolean gates and flip-flips in Javascript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/omid.sakhi/flexgate.git"
+  },
+  "author": "Omid Sakhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/omid.sakhi/flexgate/issues"
+  },
+  "homepage": "https://gitlab.com/omid.sakhi/flexgate#README",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

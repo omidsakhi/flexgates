@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>FlexGates</title>
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+        <div id="container">
+		<div id="sidebar">
+		<h3 id="sidebar-header">Logic Gates</h3>
+			<div id="sidebar-group">
+			<img class="sidebar-item" id="sidebar-buffer" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/buffer-icon.png">
+			<img class="sidebar-item" id="sidebar-not" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/not-icon.png">		
+			<img class="sidebar-item" id="sidebar-or" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/or-icon.png">
+			<img class="sidebar-item" id="sidebar-nor" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/nor-icon.png">
+			<img class="sidebar-item" id="sidebar-and" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/and-icon.png">
+			<img class="sidebar-item" id="sidebar-nand" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/nand-icon.png">
+			<img class="sidebar-item" id="sidebar-xor" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/xor-icon.png">
+			<img class="sidebar-item" id="sidebar-xnor" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/xnor-icon.png">
+			</div>
+		<h3 id="sidebar-header">Flip-Flip & Latch</h3>
+			<div id="sidebar-group">
+			<img class="sidebar-item" id="sidebar-d-flip-flop" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/d-flip-flop.png">
+			<img class="sidebar-item" id="sidebar-t-flip-flop" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/t-flip-flop.png">		
+			<img class="sidebar-item" id="sidebar-jk-flip-flop" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/jk-flip-flop.png">			
+			<img class="sidebar-item" id="sidebar-gated-d-latch" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/gated-d-latch.png">			
+			</div>		
+		<h3 id="sidebar-header">Digital Circuits</h3>
+			<div id="sidebar-group">
+			<img class="sidebar-item" id="sidebar-1-bit-full-adder" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/1-bit-full-adder.png">
+			<img class="sidebar-item" id="sidebar-2-to-1-multiplexer" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/2-to-1-multiplexer.png">
+			</div>						
+		<h3 id="sidebar-header">Input Devices</h3>			
+			<div id="sidebar-group">
+			<img class="sidebar-item" id="sidebar-clock" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/clock-icon.png">
+			<img class="sidebar-item" id="sidebar-sawtooth-generator" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/sawtooth-generator.png">
+			<img class="sidebar-item" id="sidebar-pushbutton" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/pushbutton-icon.png">
+			<img class="sidebar-item" id="sidebar-toggleswitch" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/switch-1-off.png">
+			<img class="sidebar-item" id="sidebar-motiondetector" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/motiondetector-triggered.png">
+			</div>				
+		<h3 id="sidebar-header">Output Devices</h3>
+			<div id="sidebar-group">
+			<img class="sidebar-item" id="sidebar-probe" draggable="true" ondragstart="dragItem(event)" src="./images/sidebar/probe-icon.png">			
+			</div>            
+		</div>
+		<div id="scene" ondragover="allowDropOnScene(event)" ondrop="dropOnScene(event)">
+        <canvas id="grid"></canvas>	
+        </div>
+			<form id="signup-form" onsubmit="return validateSignupOnSubmit(this);" onreset="return closeSignupOnReset(this)">
+				<div class="form-title">Sign up Form</div>
+				<table>
+					<tr>
+						<div id="signup-msg"></div>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input type="text" name="username" placeholder="Your email (username)"/></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" name="password" /></td>
+					</tr>
+					<tr>
+						<td>Confirm Password:</td>
+						<td><input type="password" name="confirm" /></td>
+					</tr>
+					<tr>
+						<td>Screen Name:</td>
+						<td><input type="text" name="screenname" placeholder="(Optional)"/></td>
+					</tr>					
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Sign Up" /><input type="reset" value="Cancel"/></td>						
+					</tr>
+				</table>
+			</form>		
+			<form id="signin-form" onsubmit="return validateSigninOnSubmit(this);" onreset="return closeSigninOnReset(this)">
+				<div class="form-title">Sign in Form</div>
+				<table>
+					<tr>
+						<div id="signin-msg"></div>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><input type="text" name="username" placeholder="Your email (username)"/></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" name="password" /></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Sign Up" /><input type="reset" value="Cancel"/></td>						
+					</tr>
+				</table>
+			</form>			
+		</div>  
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>		
+		<script src="js/core.js"></script>        
+        <script src="js/devices.js"></script>        
+		<script src="js/logic.js"></script>        
+	</body>
+</html>
