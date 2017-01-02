@@ -5,7 +5,7 @@ A javascript app for digital logic gates and flip-flops
 
 #Short-cuts
 
-[Left Mouse Button] -> Select a gate, toggle an input terminal value, start wiring from an output terminal
-[Shift + Left Mouse Button] Select multiple/another node
-[a] Select/Deselect all
-[x] Delete selections
+[Left Mouse Button] -> Select a gate, toggle an input terminal value, start wiring from an output terminal <br />
+[Shift + Left Mouse Button] Select multiple/another node <br />
+[a] Select/Deselect all <br />
+[x] Delete selections <br />
